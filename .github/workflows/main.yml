@@ -65,6 +65,8 @@ jobs:
         run: |
           haxelib setup C:/haxelib
           haxelib install hxcpp > /dev/null --quiet
+          haxelib install lime 8.0.2
+          haxelib set lime 8.0.2
           haxe -cp ./setup -D analyzer-optimize -main Main --interp
         shell: cmd
       - name: Skip SScript setup mode
