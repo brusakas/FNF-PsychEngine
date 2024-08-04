@@ -35,11 +35,11 @@ jobs:
           sudo apt-get install libvlc-dev
           sudo apt-get install libvlccore-dev
           haxelib setup ~/haxelib
-          haxelib set flixel 5.5.0 -y
-          haxelib set flixel-addons 3.2.1 -y
-          haxelib set flixel-ui 2.5.0 -y
-          haxelib set lime 8.0.1 -y
-          haxelib set openfl 9.3.2 -y
+          haxelib set flixel 5.5.0
+          haxelib set flixel-addons 3.2.1
+          haxelib set flixel-ui 2.5.0
+          haxelib set lime 8.0.1
+          haxelib set openfl 9.3.2
           haxelib install hxcpp > /dev/null --quiet
           haxe -cp ./setup -D analyzer-optimize -main Main --interp
       - name: Skip SScript setup mode
